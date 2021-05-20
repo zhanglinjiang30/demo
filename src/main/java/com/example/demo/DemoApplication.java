@@ -1,12 +1,16 @@
 package com.example.demo;
 
+import com.baomidou.mybatisplus.core.conditions.query.QueryWrapper;
+import com.example.demo.dao.MsLaborMapper;
 import com.example.demo.pojo.DemoDto;
 import com.example.demo.pojo.DemoVo;
+import com.example.demo.pojo.MsLabor;
 import com.example.demo.pojo.Person;
 import net.oschina.j2cache.CacheChannel;
 import net.oschina.j2cache.J2Cache;
 import org.mybatis.spring.annotation.MapperScan;
 import org.springframework.beans.BeanUtils;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
@@ -72,11 +76,12 @@ public class DemoApplication {
 
         //算法题
         //古典问题：有一对兔子，从出生后第3个月起每个月都生一对兔子，小兔子长到第三个月后每个月又生一对兔子，假如兔子都不死，问每个月的兔子总数为多少？ //这是一个菲波拉契数列问题
-        for(int i=1;i<=20;i++){//假如20个月
-            System.out.println("第"+i+"个月，兔子的数量："+tuzi(i));
-        }
-
-
+//        for(int i=1;i<=20;i++){//假如20个月
+//            System.out.println("第"+i+"个月，兔子的数量："+tuzi(i));
+//        }
+//        QueryWrapper<MsLabor> msLaborQueryWrapper=new QueryWrapper<>();
+//        msLaborQueryWrapper.lambda().eq(MsLabor::getUfaceId,"16E3A2F73FF140CDAF35048F40127E79");
+//        MsLabor msLabor=msLaborMapper.selectOne(msLaborQueryWrapper);
     }
 
     private static void serializePerson() throws FileNotFoundException,IOException {
