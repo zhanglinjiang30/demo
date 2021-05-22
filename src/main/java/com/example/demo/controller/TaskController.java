@@ -25,7 +25,6 @@ public class TaskController {
     }
 
     @GetMapping("/getNewTasks")
-    @PreAuthorize("hasRole('ADMIN')")
     public String newTasks(){
         return "创建了一个新的任务";
     }
