@@ -1,4 +1,4 @@
-package com.example.demo.controller;
+﻿package com.example.demo.controller;
 
 import com.baomidou.mybatisplus.core.conditions.query.QueryWrapper;
 import com.example.demo.dao.MsLaborMapper;
@@ -26,6 +26,7 @@ public class TaskController {
 
     @GetMapping("/getNewTasks")
     public String newTasks(){
+        System.out.println("创建了一个新的任务");
         return "创建了一个新的任务";
     }
 }
