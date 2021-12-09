@@ -1,4 +1,4 @@
-﻿package com.example.demo.controller;
+package com.example.demo.controller;
 
 import com.baomidou.mybatisplus.core.conditions.query.QueryWrapper;
 import com.example.demo.dao.MsLaborMapper;
