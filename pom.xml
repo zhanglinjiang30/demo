@@ -121,17 +121,8 @@
             <version>2.6.10</version>
         </dependency>
     </dependencies>
-
-    <build>
-        <plugins>
-            <plugin>
-                <groupId>org.springframework.boot</groupId>
-                <artifactId>spring-boot-maven-plugin</artifactId>
-            </plugin>
-        </plugins>
-    </build>
-
-    <repositories>
+	
+	<repositories>
         <repository>
             <id>spring-snapshots</id>
             <url>http://repo.spring.io/libs-snapshot</url>
@@ -143,5 +134,14 @@
             <url>http://repo.spring.io/libs-snapshot</url>
         </pluginRepository>
     </pluginRepositories>
+
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.springframework.boot</groupId>
+                <artifactId>spring-boot-maven-plugin</artifactId>
+            </plugin>
+        </plugins>
+    </build>
 
 </project>
