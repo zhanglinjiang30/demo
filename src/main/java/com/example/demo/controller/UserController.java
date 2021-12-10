@@ -15,6 +15,7 @@ public class UserController {
     @Autowired
     private BCryptPasswordEncoder bCryptPasswordEncoder;
 
+    //测试
     @GetMapping("/register")
     public String registerUser(){
         User user = new User();
